@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.DetailActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drop ur Favorites Notes"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="39dp"
+        android:textSize="21sp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:src="@drawable/blanknotes"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="19sp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="10dp"
+        android:textSize="19sp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/note_edit"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/border"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/savebtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/button"
+            android:text="Save"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updatebtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/button"
+            android:layout_alignParentEnd="true"
+            android:text="Update"/>
+
+    </RelativeLayout>
+</LinearLayout>

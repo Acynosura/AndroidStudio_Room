@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="10dp"/>
+
+    <!-- Remove the solid color attribute to have no fill -->
+    <!-- Add the stroke attribute to define the stroke properties -->
+    <stroke
+        android:width="3dp"
+        android:color="@color/text"/>
+</shape>
